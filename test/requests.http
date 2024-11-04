@@ -5,6 +5,26 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "asdfv@sdfg.com",
-    "password": "2255"
+    "email": "amin@amin.com",
+    "password": "amin"
+
+}
+
+### Find a Particular Users
+GET http://localhost:3000/auth/3
+
+
+### Find All The Users
+GET http://localhost:3000/auth?email=amsdin@ss.com
+
+### Delete a User with a Givin ID
+DELETE http://localhost:3000/auth/4
+
+
+### Update a User
+PATCH http://localhost:3000/auth/3
+Content-Type: application/json
+
+{
+    "email": "amsdin@ss.com"
 }
