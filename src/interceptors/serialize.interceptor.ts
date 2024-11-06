@@ -8,6 +8,7 @@ import { plainToClass } from 'class-transformer';
 import { map, Observable } from 'rxjs';
 
 interface ClassConstructor {
+  //Declared for type limitation of accepted dto
   new (...args: any[]): {};
 }
 

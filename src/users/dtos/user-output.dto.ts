@@ -1,9 +1,9 @@
 import { Expose } from 'class-transformer';
 
 export class UserOutputDto {
-  @Expose()
+  @Expose() // Include in response
   id: number;
 
-  @Expose()
+  @Expose() //include in response
   email: string;
 }

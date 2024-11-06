@@ -1,14 +1,28 @@
 ### Create a New User
-
-
 POST http://localhost:3000/auth/signup 
 Content-Type: application/json
 
 {
-    "email": "amin@amin.com",
-    "password": "amin"
+    "email": "test@test.com",
+    "password": "123456"
 
 }
+
+### Signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "123456"
+
+}
+
+### Who am i
+GET http://localhost:3000/auth/whoami HTTP/1.1
+
+### Sign Out
+POST http://localhost:3000/auth/signout HTTP/1.1
 
 ### Find a Particular Users
 GET http://localhost:3000/auth/3
@@ -28,3 +42,4 @@ Content-Type: application/json
 {
     "email": "amsdin@ss.com"
 }
+
